@@ -1,0 +1,13 @@
+# Ignora node_modules em todas as pastas
+**/node_modules/
+# Ignora arquivos .env em todas as pastas
+**/.env
+# Ignora arquivos específicos do Backend
+app/Backend/node_modules/
+app/Backend/.env
+app/Backend/package-lock.json
+
+# Ignora arquivos específicos do Frontend
+app/Frontend/node_modules/
+app/Frontend/.env
+app/Frontend/package-lock.json

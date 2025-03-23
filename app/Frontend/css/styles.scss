@@ -1,0 +1,537 @@
+$color-font : #820AD1;
+$color-subtitulo: #191919;
+$bg-card: #f5f5f5;
+
+
+//finalizado e revisado 02/11/23
+
+.img-logo{
+    width: 50px;
+    margin-top: 5px;
+
+}
+.navbar-logo {
+  width: 50px;
+  height: auto;
+}
+.navbar {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 90px;
+  width: 100%;
+
+}
+.navbar-menu {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+.navbar-toggler {
+  margin-top: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border: 0;
+  width: 40px;
+  height: 40px; 
+  &:hover {
+    background-color: #CF8CFC;
+    border-radius: 50%; 
+  }
+}
+.navbar-menu.active {
+  display: flex;
+  position: absolute;
+}
+.nav-item{
+  font-size: 36px;
+  font-weight: 500;
+  padding: 3px;
+}
+.navbar-menu li {
+  margin-right: 20px;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+}
+.customPrincipal {
+    position: relative;
+    background-image: url("../img/foto1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+        .form-group {
+            max-width: 20em; 
+        }
+}
+.custom-card { //class para card backgroud
+  height:450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+ 
+}
+.btnQuero{
+  display: none;
+}
+.btn-lg{
+      background-color:$bg-card;
+      &:hover{
+        cursor:not-allowed;
+      }
+}
+.container-fluid {
+      padding-right: 0 !important; /* Remove o padding direito */
+}
+.row{
+      margin-right: 0 !important; /* remove a margem direita */
+}
+#elementosCards {
+    justify-content: space-between;
+    padding: 10px;
+    margin: 50px 10px;
+    display: flex;
+    outline: none; /* Remove a borda de foco */
+    overflow-x: auto; /* Adicione a rolagem horizontal apenas à div #elementosCards */
+    max-width: 100%; /* Limita a largura da div #elementosCards ao máximo da tela */
+}
+#elementosCards::-webkit-scrollbar { //esconde barra de rolagem
+    width: 0;
+    height: 0;
+}
+#CardCards{
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    max-width: 100%;
+    outline: none; /* Remove a borda de foco */
+    overflow-x: auto; /* Adicione a rolagem horizontal apenas à div #elementosCards */  
+    max-width: 100%; /* Limita a largura da div #elementosCards ao máximo da tela */
+}
+#CardCards::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+#carrosselCards {
+    padding: 5px;
+    max-height: 500px;
+    margin: 30px 0;
+  
+
+}
+.img-no-resize01,
+.img-no-resize{
+  min-width: 80px;
+  max-width: 100px;
+}
+
+//elementoscard e cardcards
+.cartao {
+    border: none;
+    border-radius: 10px;
+    margin: 1em;
+    min-width: 350px;
+    max-width: 565px;
+    max-height: 600px;
+    padding-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $bg-card;
+}
+.img {
+  width: 100%; /* A largura da imagem ocupará 100% do card */
+  height: auto; /* A altura da imagem se ajustará automaticamente para manter a proporção original */
+  max-height: 300px; /* Define um valor máximo para a altura da imagem para evitar que ela fique muito alta */
+}
+.titulo{
+  padding-top: 15px;
+  color: $color-font;
+  padding-left:  15px;
+    font-size: 18px;
+}
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-font;
+    padding-left:  15px;
+    padding-right: 5px;
+    font-size: 18px;
+   
+}
+.icone{
+    color: $color-font;
+    font-size: 15px;
+
+}
+.conteudo{
+    color: $color-subtitulo;
+    padding:5px;
+    font-size: 18px;
+    margin-bottom: 0;
+   width: 100%;
+
+   
+}
+.conteudoG{
+  color: $color-subtitulo;
+  padding:15px;
+  font-size: 18px;
+  margin-bottom: 0;
+  width: 90%;
+}
+.meuH1{
+    padding-left: 40px;
+    color:$color-font;
+}
+.meuH1Black{
+    padding-left: 40px;
+}
+.meulink{
+    text-decoration: none;
+    color:$color-font;
+    padding-left: 40px;
+}
+.linkDu_roxo,
+.iconeDu_roxo {
+  color: $color-font;
+  text-decoration: none;
+  font-size: 20px;
+}
+.linkDu_branco,
+.iconeDu_branco {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-right: 10px;
+}
+//carrosel
+.card {
+    margin: 5px;
+    padding: 12px;
+
+}
+.slick-track{  
+ padding: 5px;
+}
+.slick-arrow{
+  margin: 2px ; 
+  height: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center; 
+}
+
+
+.titulo-min, .link-min {
+    padding:  10px;
+    margin: 0;
+    max-height: 100%; /* Garanta que o conteúdo não ultrapasse a altura do cartão */
+}
+.link-min{
+    color:$color-font;
+    padding: 5px ;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sub{
+    font-size: 14px;
+    color:$color-subtitulo;
+    font-weight: normal;
+    padding: 25px 15px 0 15px;
+}
+.icone{
+    padding: 15px 0 0 15px;
+    font-size: 20px;
+}
+.iconeCarrosel{
+  padding: 15px 0 0 15px;
+}
+
+
+#slick-prev,
+#slick-next {
+    font-size: 20px; /* Tamanho das setas */
+    cursor: pointer; 
+    align-items: center; 
+    border: 0;
+    width: 40px;
+    height: 40px; 
+    &:hover {
+      background-color: #cdb3dd;
+      border-radius: 50%; 
+     
+    }
+}
+.car {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+   
+}
+//cardsDu
+.iconeDu{
+    color:$color-font;
+    padding: 15px 0 0 15px;
+    font-size: 20px;
+}
+.imgDu,
+.imgBg,
+.personalizadaImgBg {
+    width: 100% ;
+    padding: 30px 0 ;
+    display: block;
+    margin: 0 auto; /* Centralize a imagem horizontalmente */
+}
+.linkDu{
+    color:$color-font;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+.tituloDu:hover{
+    text-decoration: underline;
+}
+.conDu{
+    font-size: 20px;
+    font-weight:600;
+   
+
+}
+.carDu {
+    display: grid; /* Define um contêiner como um grid */
+    grid-template-areas:    /* Defina a ordem dos elementos em telas menores que 768px usando grid-template-areas */
+      "imgDu" /* Nome da área para imgDu */
+      "tituloDu" /* Nome da área para tituloDu */
+      "conDu" /* Nome da área para conDu */
+      "linkDu"; /* Nome da área para linkDu */
+}
+.subtituloUnico{
+  padding: 10px  0;
+
+}
+.paragrafoUnico{
+  font-size: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .top-PainelInicio{
+    padding: 15em 0;
+}
+
+}
+@media  screen and  (min-width: 768px) {
+    .carDu {
+      grid-template-areas: /* Altera a ordem dos elementos em telas maiores usando grid-template-areas */
+        "tituloDu" /* Move o título para a parte superior */
+        "conDu" /* Move o conteúdo para a segunda posição */
+        "linkDu" /* Move o link para a terceira posição */
+        "imgDu"; /* Move a imagem para a parte inferior */
+
+        /* Estilos específicos para cada elemento dentro de .carDu */
+  .tituloDu {
+    grid-area: tituloDu; /* Define que este elemento deve ocupar a área com nome "tituloDu" */
+  } 
+  .conDu {
+    grid-area: conDu; /* Define que este elemento deve ocupar a área com nome "conDu" */
+  }
+  .linkDu {
+    grid-area: linkDu; /* Define que este elemento deve ocupar a área com nome "linkDu" */
+  }
+  .imgDu {
+    grid-area: imgDu; /* Define que este elemento deve ocupar a área com nome "imgDu" */
+  }
+  .tituloDu{
+    font-size: 48px;
+  }
+  .conDu{
+    font-size: 24px;
+  }
+    }
+  
+    .top-PainelInicio{
+        padding-top: 9em;
+    }
+    .custom-card { //class para card backgroud
+      height: 550px;
+}
+.slick-track{
+ max-height: 340px;
+
+}
+.h1Unico{
+  width: 100%;
+  margin: 20px;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+}
+
+}
+@media screen and (min-width: 992px) {
+.car, .carDu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+}
+
+.imgDu,
+.imgBg,
+.personalizadaImgBg{
+  width: 425px;   
+  padding: 15px;
+   margin: auto;
+}
+
+.index-0  {
+        flex-direction: row-reverse;  //altera lado
+        padding: 20px;
+      }
+      
+}
+@media screen and (min-width: 1100px) {
+.conDu {
+            font-size: 20px;
+            
+}
+.flex-container {
+            display: flex;
+            justify-content: space-between;
+}
+.largurapersonalizadaCard {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%; /* Ajuste a largura desejada */
+}
+#carrosselCards {
+  margin: 60px 0;
+}
+.custom-card{
+          height: 800px;
+
+}
+.custom_xl{//div card backgroud
+          padding-top: 10em;
+          padding-left: 10em;
+}
+.car, .carDu{
+  padding: 2em;
+}
+.carUnico{
+  padding: 2em;
+}
+.imgDu, .imgBg{
+  margin: 0 !important;
+}
+.personalizadaImgBg{
+  width: 100%;
+}
+}
+@media screen and (min-width: 1200px) {
+.customPrincipal{
+            height: 1000px;
+            .top-PainelInicio{
+            padding-top: 20em;
+            padding-right: 2em;  
+            }
+}
+.navbar-menu {
+          display: flex;
+          flex-direction: row;
+          top: 0;
+          height: auto;
+          width: 95%;
+          left: auto;
+          align-items:center;
+          position: relative;
+          text-align: center;
+}
+.nav-item .nav-link{
+        border: none !important;
+        font-size: 17px;
+}
+.navbar-toggler{
+        display: none;
+}
+.nav-item:last-child {
+        margin-left: auto; 
+        color:$color-font;
+}
+.nav-item:last-child a {
+      color:$color-font; 
+}
+.nav-item:last-child i {
+      font-size: 20px; 
+      padding-left: 5px;
+}
+.btnQuero{
+    display: flex;
+    border:1px solid $color-font;
+    border-radius:20px;
+    padding: 7px 20px;
+    margin: 15px;
+    background-color:$color-font;
+    color:white;
+}  
+
+}
+@media screen and (min-width: 1400px) {
+  .carDu, .car{
+    padding: 5em ;
+  }
+  .imgDu{
+    margin: 5em;
+    width: 50%;
+  }
+   .imgBg{
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .carDu, .car{
+    padding: 8em !important;
+  }
+  .carConteudo{
+    max-width: 700px;
+    margin: 5em;
+  }
+  .personalizadoconCarconteudo{
+    margin: 0 !important;
+  }
+  #elementosCards, #CardCards {
+    justify-content: center;
+  }
+  .meuH1,
+  .meuH1Black{
+  text-align: center;
+  }
+ .meulink{
+  display: flex;
+   justify-content: center;
+  }
+}
+@media screen and (min-width: 2560px) {//4k
+  .carConteudo{
+ 
+    margin: 10em;
+  }
+  .canDu{
+    font-size: 100px;
+  }
+}
+

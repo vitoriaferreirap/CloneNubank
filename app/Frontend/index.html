@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+
+    <title>Clone Nubank JS / DesenvolvedoraFrontend - Vitoria Ferreira.</title>
+
+</head>
+
+<!--Concluido e revisado 02/11/23-->
+
+<body>
+    <nav class="navbar  navbar-light bg-white light fixed-top">
+        <a href="" class="navbar-logo">
+            <img src="./img/logo1.png" alt="Logo" class="img-fluid">
+        </a>
+        <div class="navbar-toggler">
+            <i class="bi bi-list" id="navbar-toggle-icon"></i>
+        </div>
+
+
+        <ul class="navbar-menu " id="navbar-menu">
+            <li class="nav-item ps-0 p-3 ">
+                <a href="#" class="nav-link border-bottom">Página Inicial</a>
+            </li>
+
+            <!--itens + subitens-->
+
+            <li class="nav-item dropdown ps-0 p-2 border-xl-0">
+                <a href="#" class="nav-link dropdown-toggle border-bottom  " data-bs-toggle="dropdown">Pra você</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Conta do Nubank</a></li>
+                    <li><a href="#" class="dropdown-item">Cartão de crédito</a></li>
+                    <li><a href="#" class="dropdown-item">Função Construir Limite</a></li>
+                    <li><a href="#" class="dropdown-item">Tudo sobre Pix</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown ps-0 p-2 ">
+                <a href="#" class="nav-link dropdown-toggle border-bottom" data-bs-toggle="dropdown">Para seu
+                    negócio</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Nubank PJ</a></li>
+                    <li><a href="#" class="dropdown-item">Conta PJ</a></li>
+                    <li><a href="#" class="dropdown-item">Cartão de crédito PJ</a></li>
+                    <li><a href="#" class="dropdown-item">NuTap</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown ps-0 p-2 ">
+                <a href="#" class="nav-link dropdown-toggle border-bottom " data-bs-toggle="dropdown">O Nubank</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Sobre o Nu</a></li>
+                    <li><a href="#" class="dropdown-item">Sala de imprensa</a></li>
+                    <li><a href="#" class="dropdown-item">Carreiras</a></li>
+                    <li><a href="#" class="dropdown-item">Nu Impacto</a></li>
+                    <li><a href="#" class="dropdown-item">Investidores</a></li>
+                    <li><a href="#" class="dropdown-item">Blog</a></li>
+                    <li><a href="#" class="dropdown-item">Newsletter</a></li>
+                    <li><a href="#" class="dropdown-item">Comunidade</a></li>
+                    <li><a href="#" class="dropdown-item">InvestNews</a></li>
+                    <li><a href="#" class="dropdown-item">México</a></li>
+                    <li><a href="#" class="dropdown-item">Nu Internacional</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item ps-0 p-2 ">
+                <a href="#" class="nav-link border-bottom ">Perguntas</a>
+            </li>
+
+            <li class="nav-item ps-0 p-2  d-flex  align-items-center">
+                <a href="#" class="nav-link  border-bottom  ">Login</a>
+                <i class="bi bi-box-arrow-in-right"></i>
+                <button class="btn  btnQuero" id="scrollButton">Quero ser Nubank</button>
+            </li>
+
+
+        </ul>
+
+
+        </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid p-0 customPrincipal "><!--class determina altura da div e img de fundo-->
+        <div
+            class="row  align-content-center top-PainelInicio justify-content-center justify-content-md-between top-md-0 ps-md-5 ms-xl-5 ps-xl-5 ">
+            <!--class determina p top e left do conteudoPrincipal-->
+            <div class="col-10 col-md-5   col-xl-5 col-xxl-4 text-white pt-xl-0 pt-xxl-3 ps-xxl-0">
+                <h1 class=" pt-md-0  pb-md-4 fontSize fw-semibold">Tenha N Possibilidades de produtos para N
+                    Possibilidades na vida</h1>
+                <p class="lead lh-2 pb-5 pe-md-2  fw-semibold">O que você precisa para ficar no controle da sua vida
+                    financeira tem no app do Nubank</p>
+            </div>
+            <div class=" col col-md-11 col-xl-4 ms-xl-auto  col-xxl-3 ">
+                <div class="row justify-content-center justify-content-md-end">
+                    <form class="form-group  p-4 mt-md-1 bg-white  rounded-4 rounded text-black   ">
+                        <p class="lead fw-semibold pb-4">Peça sua conta e cartão de crédito do Nubank</p>
+                        <input type="text" class="form-control border-0 border-bottom rounded-0 mt-4 mb-xl-3"
+                            placeholder="Digite seu CPF">
+                        <button class="btn btn-lg btn-light fw-light mt-4 rounded-5 w-100 mb-3 ">Continuar
+                            <i class="bi-arrow-right  ms-4 ps-5"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--grupo de cards, carrosel + scrol horizontal-->
+
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col p-0 ">
+                <div id="carrosselCards" class="slick-carousel">
+                    <!--  cards-->
+                </div>
+                <div class="slick-arrow text-center">
+                    <i class="bi bi-arrow-left " id="slick-prev"></i>
+                    <i class="bi bi-arrow-right" id="slick-next"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col p-0">
+                <div id="duplacard"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container h-75   p-5">
+        <div class="row">
+            <div class="col p-2  d-md-flex   pt-lg-5">
+                <h1 class="h1Unico p-t3 pb-3">Faça mais com seu cartão de crédito</h1>
+                <div id="bloco"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col mt-5 p-0">
+                <h1 class="meuH1">Mais Produtos Nubank</h1>
+                <div id="elementosCards" class="rolagemHorizontal" tabindex="0">
+                    <!-- Aqui vão seus cartões -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col p-0">
+                <div id="backgroud"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col mt-5 p-0">
+                <h1 class="meuH1Black">Fique por dentro das Novidades</h1>
+                <a class="meulink" href="#"> Ir para o Blog do Nu <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+            <div id="CardCards" class="rolagemHorizontal" tabindex="0">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col p-0 ">
+                <div class="custom-card p-3 pe-5 pt-5 ps-lg-4 ps-md-4 "
+                    style="background-image: url('./img/grupo-de-adolescentes-posando-juntos.jpg');">
+                    <div class="col-12  col-md-6  col-lg-6 col-xl-7 col-xxl-5 custom_xl "><!--container do conteudo-->
+                        <h1 class="text-white pb-3 pb-sm-3 pb-md-4  pe-md-5 font-card ">Nós acreditamos que só uma
+                            pessoa pode ter controle sobre sua vida financeira:você.</h1>
+                        <a href="#" class="card-link text-decoration-none text-white ">Saiba mais sobre como fazemos
+                            isso.
+                            <i class="bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-0">
+                <div class="custom-card p-3 ps-lg-4 pt-5 ps-md-4"
+                    style="background-image: url('./img//retrato-de-jovens-amigos-no-estilo-de-moda-dos-anos-2000-posando-com-televisao.jpg');">
+                    <div class=" col-md-7  col-lg-6 col-xl-8 col-xxl-5 custom_xl"><!--container do conteudo-->
+                        <h1 class="text-white pb-1 pe-xl-5 font-card ">NuCommunity</h1>
+                        <h1 class="card-subtitle  text-white pb-3 pb-md-4  font-card  ">A comunidade oficial do Nubank
+                            para você tirar dúvidas e compartilhar ideias.</h1>
+                        <a href="#" class="card-link text-decoration-none text-white  ">Faça parte
+                            <i class="bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col p-0 ">
+                <div class="custom-card p-3 ps-lg-4 pt-5 ps-md-4 "
+                    style="background-image: url('./img/pexels-cottonbro-studio-6484132.jpg');">
+                    <div class="col-10  col-sm-8 col-md-7  col-xl-7 col-xxl-5 custom_xl "><!--container do conteudo-->
+                        <h1 class=" text-white font-paragrafo pb-3 pb-md-4 font-card ">Conheça nossa central de
+                            informações em caso de energências.</h1>
+                        <a href="#" class="card-link text-decoration-none text-white">Conheça o SOS Nu
+                            <i class="bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--REVISADO E FINALIZADO 25/08   foooter-->
+    <div class="container-fluid bg-black text-white fs- ps-3">
+        <div class="row  ps-md-5">
+            <div class=" col-md-6 col-xxl-3 pt-5">
+                <h5 class="text-white-50  pb-4">Nubank</h5>
+                <ul class="list-unstyled fontLink">
+                    <li class="list-group-item">Sobre nós</li>
+                    <li class="list-group-item">Carreiras</li>
+                    <li class="list-group-item">Perguntas frequentes</li>
+                    <li class="list-group-item">Contato</li>
+                    <li class="list-group-item">Imprensa</li>
+                    <li class="list-group-item">ESG
+                        <i class="bi-arrow-up-right "></i>
+                    </li>
+                    <li class="list-group-item">Investidores
+                        <i class="bi-arrow-up-right "></i>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class=" col-md-6 col-xxl-3 pt-5">
+                <h5 class="text-white-50   pb-4">Produtos</h5>
+                <ul class="list-unstyled fontLink">
+                    <li class="list-group-item">Conta digital</li>
+                    <li class="list-group-item">Cartão de crédito</li>
+                    <li class="list-group-item">Nubank Ultravioleta</li>
+                    <li class="list-group-item">Função Construir Limite</li>
+                    <li class="list-group-item">Empréstimo</li>
+                    <li class="list-group-item">Conta PJ</li>
+                    <li class="list-group-item">Cartão de crédito PJ</li>
+                    <li class="list-group-item">Nubank Vida</li>
+                    <li class="list-group-item">Investimentos</li>
+                </ul>
+            </div>
+
+            <div class=" col-md-6 col-xxl-3 pt-1">
+                <h5 class="text-white-50  pt-5 pb-4">Explore</h5>
+                <ul class="list-unstyled fontLink">
+                    <li class="list-group-item">Comunidade
+                        <i class="bi-arrow-up-right "></i>
+                    </li>
+                    <li class="list-group-item">Blog
+                        <i class="bi-arrow-up-right "></i>
+                    </li>
+                    <li class="list-group-item">InvetNews
+                        <i class="bi-arrow-up-right "></i>
+                    </li>
+                    <li class="list-group-item">Newsletter
+                        <i class="bi-arrow-up-right "></i>
+                    </li>
+                    <li class="list-group-item">México
+                        <i class="bi-arrow-up-right "></i>
+                    </li>
+                    <li class="list-group-item">Colômbia
+                        <i class="bi-arrow-up-right "></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-xxl-3 pt-1">
+                <h5 class="text-white-50  pt-5 pb-4">Veja também</h5>
+                <ul class="list-unstyled fontLink">
+                    <li class="list-group-item">Tudo sobre PIX
+                        <i class="bi-arrow-right "></i>
+                    </li>
+                    <li class="list-group-item">Fornecedores
+                        <i class="bi-arrow-right "></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" col-md-6 col-xxl-3 ">
+                <h5 class="text-white-50 pt-5 pb-4">Transparência</h5>
+                <ul class="list-unstyled fontLink">
+                    <li class="list-group-item">Política de privacidade</li>
+                    <li class="list-group-item">Política de segurança</li>
+                    <li class="list-group-item">Contratos</li>
+                    <li class="list-group-item">Relatórios financeiros</li>
+                    <li class="list-group-item">Ética e compliance</li>
+                    <li class="list-group-item">Dados abertos</li>
+                    <li class="list-group-item">SCR</li>
+                    <li class="list-group-item">Converção de boletos</li>
+                    <li class="list-group-item">PLD/CFTP</li>
+                </ul>
+            </div>
+
+            <div class=" col-md-6 col-xxl-3 pt-5 fontLink">
+                <h5 class="text-white-50 ">Fale com a gente</h5>
+                <h6>Capitais e Regiões metropolitanas</h6>
+                <p class="lead">0000-0000</p>
+                <h6>Demais localidades</h6>
+                <p class="lead">0000-0000</p>
+                <h6>nubank@Nubank.com.br</h6>
+                <p class="lead">Canal de atendimento em libras</p>
+                <p class="lead">Atendimento 24h</p>
+
+            </div>
+
+
+
+
+            <div class="col-md-7 col-xxl-3 fontLink">
+                <h5 class="text-white-50  pt-5 pb-">Ouvidoria</h5>
+                <p>nubank@Nubank.com.br</p>
+                <p>Atendimento das 9h às 18h (dias úteis)</p>
+            </div>
+
+            <div class="col-md-5 pb-5 col-xxl-3 fontLink">
+                <h5 class="fw-light pt-5 pb-4">Baixe o app</h5>
+                <img src="./img/AppGoogle.png" class="img-fluid  img-no-resize d-block" alt=""></img>
+                <img src="./img/appStory.png" class="img-fluid  img-no-resize " alt=""></img>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid bg-black ps-3">
+        <div class="row pt-5">
+            <hr>
+            <div class="col-xl-1">
+                <img src="./img//bec4b72169ecf809fe45f8e85c9caccd.jpg" class="img-no-resize01 pb-5 pt-2 ps-md-4">
+
+            </div>
+            <div class="col-xl-8 ps-md-5">
+                <andress>
+                    <p class="lead text-white pt-xl-2 fs-6 mb-0 "> <i class="bi-c-circle text-white"></i> 2023 Nu
+                        Pagamentos S.A - Instituição de Pagamento. 00.000.000/0000-00</p>
+                    <p class="lead text-white pb-5 fs-6">Rua AAAA BBBB , 000-XXXX,XX- 00000-000</p>
+                </andress>
+            </div>
+            <div class="col-xl-3">
+                <div class="row d-inline ps-5 ">
+                    <i class="bi-linkedin text-white"></i>
+                    <i class="bi-youtube text-white"></i>
+                    <i class="bi-facebook text-white"></i>
+                    <i class="bi-instagram text-white"></i>
+                    <i class="bi-twitter text-white "></i>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="footer bg-black ps-3 pt-5 pb-5">
+        <hr>
+        <div class="container text-center">
+            <div class="row  justify-content-md-end">
+                <div class="col-6 col-md-2">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="radio_idioma" class="form-check-input bg-black" name="idioma">
+                        <label for="radio_idioma" class="form-check-label text-white">Português</label>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="radio_idioma" class="form-check-input bg-black" name="idioma">
+                        <label for="radio_idioma" class="form-check-label text-white">English</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" text-white text-center">
+            <p>Clonagem criado por: <a href="https://vitoriaferreiradev.com.br" class="text-white" target="_blank">Vitoria Ferreira</a></p>
+          </div>
+          
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- arquivo script.js, que usa o jQuery -->
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
