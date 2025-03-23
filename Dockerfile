@@ -1,24 +1,24 @@
-# Use uma imagem base do Node.js
+# Usa a imagem base do Node.js
 FROM node:18
 
-# Define o diretório de trabalho dentro do contêiner
+# Define o diretório de trabalho no container
 WORKDIR /usr/src/app
 
-# Copia o arquivo package.json e package-lock.json para o diretório de trabalho
+# Copia o package.json e package-lock.json para instalar as dependências
 COPY package*.json ./
 
-# Instala as dependências do backend e frontend
+# Instala as dependências
 RUN npm install
 
-# Copia o diretório Backend e Frontend para o diretório de trabalho
-COPY Backend ./Backend
-COPY Frontend ./Frontend
+# Copia os diretórios Backend e Frontend para o diretório de trabalho
+COPY ./Backend ./Backend
+COPY ./Frontend ./Frontend
 
 # Define o diretório de trabalho para a raiz do projeto
 WORKDIR /usr/src/app
 
-# Expõe a porta que o app vai usar
+# Expõe a porta para o container
 EXPOSE 8080
 
-# Comando para iniciar a aplicação
+# Comando para rodar o projeto
 CMD ["npm", "start"]

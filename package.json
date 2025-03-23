@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-    "start-backend": "cd app/Backend && npm start",
-    "start-frontend": "cd app/Frontend && npm start",
-    "install-all": "npm install && cd app/Backend && npm install && cd ../Frontend && npm install"
-  },
+  "start-backend": "cd Backend && npm start",
+  "start-frontend": "cd Frontend && npm start",
+  "install-all": "npm install && cd Backend && npm install && cd ../Frontend && npm install"
+},
   "dependencies": {
     "concurrently": "^8.2.2"
   }
