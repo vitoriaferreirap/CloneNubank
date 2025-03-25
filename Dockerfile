@@ -1,4 +1,4 @@
-# Usa a imagem base do Node.js
+# Usa a imagem base do Node.js.
 FROM node:18
 
 # Define o diretório de trabalho no container
