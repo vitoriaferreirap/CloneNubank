@@ -44,6 +44,7 @@ mongoose
   });
 
 // Inicialização do servidor
-app.listen(port, () => {
-  console.log(`Servidor está rodando na porta: ${port}`);
+app.listen(port, "0.0.0.0", () => {
+  // '0.0.0.0' é ESSENCIAL para containers
+  console.log(`Servidor rodando em http://localhost:${port}`);
 });
