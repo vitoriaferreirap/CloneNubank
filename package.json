@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-  "start-backend": "cd Backend && npm start",
-  "start-frontend": "cd Frontend && npm start",
-  "install-all": "npm install && cd Backend && npm install && cd ../Frontend && npm install"
-},
+    "start-backend": "cd Backend && npm start",
+    "start-frontend": "cd Frontend && npm start",
+    "install-all": "npm install && cd Backend && npm install && cd ../Frontend && npm install"
+  },
   "dependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "mongoose": "^8.5.2"
   }
 }
