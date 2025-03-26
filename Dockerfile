@@ -14,7 +14,7 @@ RUN npm install
 COPY ./Backend ./Backend
 COPY ./Frontend ./Frontend
 
-# Define o diretório de trabalho para a raiz do projeto
+# Define o diretório de trabalho para a raiz do projeto.
 WORKDIR /usr/src/app
 
 # Expõe a porta para o container
