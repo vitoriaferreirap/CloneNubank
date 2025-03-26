@@ -5,7 +5,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 // Middleware
 app.use(express.json());
@@ -39,12 +39,11 @@ mongoose
   .connect(process.env.MONGODB_URI) // Removido useNewUrlParser e useUnifiedTopology
   .then(() => {
     console.log("Conectado ao MongoDB");
-
-    // Inicializa o servidor APÓS conectar ao banco
-    app.listen(port, "0.0.0.0", () => {
-      console.log(`Servidor rodando em http://localhost:${port}`);
-    });
   })
   .catch((error) => {
     console.error("Erro ao conectar ao MongoDB:", error);
   });
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+});
