@@ -2,7 +2,7 @@
 **/node_modules/
 # Ignora arquivos .env em todas as pastas
 **/.env
-# Ignora (subpastas)
+#(subpastas)
 **/package-lock.json
 
 package-lock.json
