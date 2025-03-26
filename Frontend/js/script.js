@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/carrosel")
+fetch("https://clonenubank-873000857804.us-west1.run.app/carrosel")
   .then((resp) => resp.json())
   .then((data) => {
     console.log("Dados recebidos:", data); // Verifique os dados recebidos
@@ -58,7 +58,7 @@ function renderizarCarrosselCards(data) {
     card.className = "card";
 
     const img = document.createElement("img");
-    img.src = `https://clonenubank-7x5l36eztq-ue.a.run.app/carrosel/${item.filename}`;
+    img.src = `https://clonenubank-873000857804.us-west1.run.app/carrosel/${item.filename}`;
     img.alt = item.filename;
     img.className = "iconeCarrosel";
 
@@ -100,7 +100,7 @@ function renderizarCarrosselCards(data) {
 }
 
 //solicitação fetch para dupla de cards
-fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/duploCards")
+fetch("https://clonenubank-873000857804.us-west1.run.app/duploCards")
   .then((resp) => resp.json())
   .then((data) => {
     function renderizarDuplaCard() {
@@ -121,7 +121,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/duploCards")
         }
 
         const imgDu = document.createElement("img");
-        imgDu.src = `https://clonenubank-7x5l36eztq-ue.a.run.app/duploCards/${item.filename}`; // URL para recuperar a imagem
+        imgDu.src = `https://clonenubank-873000857804.us-west1.run.app/duploCards/${item.filename}`; // URL para recuperar a imagem
         imgDu.alt = item.filename;
         imgDu.className = "imgDu";
 
@@ -183,7 +183,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/duploCards")
   });
 
 //solicitação fetch para backgroud
-fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/backgroud")
+fetch("https://clonenubank-873000857804.us-west1.run.app/backgroud")
   .then((resp) => resp.json())
   .then((data) => {
     console.log("Dados recebidos:", data); // Verifique os dados recebidos
@@ -225,7 +225,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/backgroud")
         }
 
         const imgBg = document.createElement("img");
-        imgBg.src = `https://clonenubank-7x5l36eztq-ue.a.run.app/backgroud/${item.filename}`;
+        imgBg.src = `https://clonenubank-873000857804.us-west1.run.app/backgroud/${item.filename}`;
         imgBg.alt = item.filename;
 
         if (index === 1 || index === 2) {
@@ -310,7 +310,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/backgroud")
     console.error("Erro durante a requisição:", error);
   });
 
-fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/bloco")
+fetch("https://clonenubank-873000857804.us-west1.run.app/bloco")
   .then((resp) => resp.json())
   .then((data) => {
     function renderizarUnico() {
@@ -322,7 +322,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/bloco")
         unicoCar.className = "carUnico";
 
         const imgDu = document.createElement("img");
-        imgDu.src = `https://clonenubank-7x5l36eztq-ue.a.run.app/bloco/${item.filename}`; // URL para recuperar a imagem
+        imgDu.src = `https://clonenubank-873000857804.us-west1.run.app/bloco/${item.filename}`; // URL para recuperar a imagem
         imgDu.alt = item.filename;
 
         const subtituloUnico = document.createElement("h3");
@@ -349,7 +349,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/bloco")
     console.error("Erro durante a requisição:", error);
   });
 
-fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/elementos")
+fetch("https://clonenubank-873000857804.us-west1.run.app/elementos")
   .then((resp) => resp.json())
   .then((data) => {
     const elementosCards = data.elementosCards;
@@ -372,7 +372,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/elementos")
         cartao.className = "cartao";
 
         const imagem = document.createElement("img");
-        imagem.src = `https://clonenubank-7x5l36eztq-ue.a.run.app/elementos/${item.filename}`; // URL para recuperar a imagem
+        imagem.src = `https://clonenubank-873000857804.us-west1.run.app/elementos/${item.filename}`; // URL para recuperar a imagem
         imagem.alt = item.filename;
         imagem.className = "img";
 
@@ -411,7 +411,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/elementos")
   });
 
 // Bloco 3: Recuperar e renderizar dados para cardCards
-fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/cardCards")
+fetch("https://clonenubank-873000857804.us-west1.run.app/cardCards")
   .then((resp) => resp.json())
   .then((data) => {
     console.log("Dados recebidos:", data); // Verifique os dados recebidos
@@ -425,7 +425,7 @@ fetch("https://clonenubank-7x5l36eztq-ue.a.run.app/cardCards")
         cartao.className = "cartao";
 
         const imagem = document.createElement("img");
-        imagem.src = `https://clonenubank-7x5l36eztq-ue.a.run.app/cardCards/${item.filename}`;
+        imagem.src = `https://clonenubank-873000857804.us-west1.run.app/cardCards/${item.filename}`;
         imagem.alt = item.filename;
         imagem.className = "img";
 
