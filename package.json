@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "description": "Projeto FullStack com Frontend e Backend",
   "main": "index.js",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "mongoose": "^8.13.0"
+  },
   "scripts": {
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
     "start-backend": "cd Backend && npm start",
     "start-frontend": "cd Frontend && npm start",
     "install-all": "npm install && cd Backend && npm install && cd ../Frontend && npm install"
   },
-  "dependencies": {
-    "concurrently": "^8.2.2",
-    "mongoose": "^8.5.2"
-  },
-  "devDependencies": {},
   "author": "",
   "license": "ISC"
 }
