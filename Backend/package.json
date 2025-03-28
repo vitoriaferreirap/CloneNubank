@@ -9,7 +9,7 @@
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "express": "^4.21.2",
     "express-fileupload": "^1.5.1",
     "gridfs-stream": "^1.1.1",
     "http-server": "^14.1.1",
@@ -21,6 +21,5 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
   "description": ""
 }

@@ -7,15 +7,12 @@ WORKDIR /usr/src/app
 # Copia o package.json e package-lock.json para instalar as dependências
 COPY package*.json ./
 
-# Instala as dependências
-RUN npm install
-
-# Copia os diretórios Backend e Frontend para o diretório de trabalho
-COPY ./Backend ./Backend
 COPY ./Frontend ./Frontend
 
 # Define o diretório de trabalho para a raiz do projeto (Frontend ou Backend se necessário)
 WORKDIR /usr/src/app
+COPY ./Backend ./Backend
+RUN npm install
 
 # Expõe a porta para o container
 EXPOSE 8080
