@@ -12,5 +12,8 @@
   "dependencies": {
     "concurrently": "^8.2.2",
     "mongoose": "^8.5.2"
-  }
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }

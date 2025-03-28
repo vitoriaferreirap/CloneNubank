@@ -1,13 +1,12 @@
-const path = require("path");
 const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-require("dotenv").config();
-
 const app = express();
-const PORT = process.env.PORT || 8080;
+const cors = require("cors");
+const mongoose = require("mongoose");
+require("dotenv").config();
+const path = require("path");
 
-// Middleware
+const port = process.env.PORT || 8080;
+
 app.use(express.json());
 app.use(cors());
 
@@ -44,6 +43,6 @@ mongoose
     console.error("Erro ao conectar ao MongoDB:", error);
   });
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Servidor está rodando na porta: ${port}`);
 });

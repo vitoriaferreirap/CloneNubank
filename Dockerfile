@@ -1,4 +1,4 @@
-# Usa a imagem base do Node.js
+# Usa a imagem base do Node.js.
 FROM node:18
 
 # Define o diretório de trabalho no container
@@ -10,11 +10,14 @@ COPY package*.json ./
 # Instala as dependências
 RUN npm install
 
-# Copia os diretórios Backend e Frontend para o diretório de trabalho.
+# Copia os diretórios Backend e Frontend para o diretório de trabalho
 COPY ./Backend ./Backend
 COPY ./Frontend ./Frontend
 
-# Exponha a porta para o container
+# Define o diretório de trabalho para a raiz do projeto (Frontend ou Backend se necessário)
+WORKDIR /usr/src/app
+
+# Expõe a porta para o container
 EXPOSE 8080
 
 # Comando para rodar o projeto
